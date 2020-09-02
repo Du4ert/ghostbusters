@@ -1,68 +1,108 @@
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+    box-sizing: border-box;
+    font-family: Roboto;
 }
+
+.container {
+    max-width: 1130px;
+}
+
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 104px;
-  padding-left: 34px;
-  border-bottom: 1px solid #d4d4d4;
+    display: flex;
+    justify-content: space-between;
+    height: 104px;
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 80px;;
 }
-.line {
-  height: 100%;
-  width: 1px;
-  background-color: #d4d4d4;
-  margin-left: 34px;
+.brand {
+    width: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #d4d4d4;
 }
+.brand-logo {
+    margin: 0 34px;
+    width: 68px;
+    height: auto;
+}
+
+.search {
+    margin-left: 34px;
+    margin-right: auto;
+    padding-left: 38px;
+   align-self: center;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 21px;
+   border: none;
+   color: #A5A5A5;
+   background: url('../img/search-icon.svg') no-repeat left  center;
+   /* overflow: hidden; */
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 22px;
+}
+
 .search-input {
-  background-image: url(../img/search-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center left;
-  padding-left: 38px;
-  border: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  color: #a5a5a5;
-  margin-left: 34px;
+    border: none;
+    height: 21px;
+    width: 177px;
 }
+
 .navigation {
-  margin-right: 44px;
-  margin-left: auto;
+    display: flex;
+    margin-right: 44px;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .navigation-link {
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 21px;
-  color: #363636;
-  margin-right: 18px;
+    margin-left: 18px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #363636;
 }
+
+.navigation-link:first-of-type {
+    margin-left: 0;
+}
+
 .button-group {
-  height: 100%;
+    display: flex;
+    border-left: 1px solid #d4d4d4;
 }
+
 .button {
-  height: 100%;
-  cursor: pointer;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    
 }
+
 .sign-up {
-  color: #5671f6;
-  font-size: 18px;
-  line-height: 21px;
-  border: none;
-  background-color: #fff;
-  padding-left: 34px;
-  padding-right: 34px;
-  border-left: 1px solid #d4d4d4;
+    padding: 0 34px;
+    background: #ffffff;
+    color: #5671F6;
 }
+
 .login {
-  font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  background-color: #5671f6;
-  border: none;
-  padding-left: 50px;
-  padding-right: 50px;
+    padding: 0 50px;
+    background: #5671F6;
+    color: #fff;
+}
+
+.film {
+    margin-bottom: 80px;
 }
