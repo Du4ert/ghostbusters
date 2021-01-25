@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Ghostbusters</title>
 </head>
@@ -13,23 +15,26 @@
         <div class="brand">
             <img src="img/logo.png" alt="Film" class="brand-logo">
         </div>
-        <input type="text" class="search" placeholder="Поиск по фильмам...">
-        <nav class="navigation">
-            <a href="#" class="navigation-link">Фильмы</a>
-            <a href="#" class="navigation-link">ТВ</a>
-            <a href="#" class="navigation-link">Новости</a>
-            <a href="#" class="navigation-link">О сервисе</a>
-        </nav>
-        <div class="button-group">
-            <button class="button sign-up">Регистрация</button>
-            <button class="button login">Войти</button>
+        <div class="top-menu">
+            <input type="text" class="search" placeholder="Поиск по фильмам...">
+            <nav class="navigation">
+                <a href="#" class="navigation-link">Фильмы</a>
+                <a href="#" class="navigation-link">ТВ</a>
+                <a href="#" class="navigation-link">Новости</a>
+                <a href="#" class="navigation-link">О сервисе</a>
+            </nav>
+            <span class="top-menu-divider"></span>
+            <div class="button-group">
+                <button class="button sign-up">Регистрация</button>
+                <button class="button login">Войти</button>
+            </div>
         </div>
 
         <div class="mobile-menu">
             <button class="mobile-menu-search">
                 <img src="img/search-icon.svg" alt="search">
             </button>
-            <button class="mobile-menu-open">
+            <button class="mobile-menu-trigger">
                 <span class="mobile-menu-line"></span>
                 <span class="mobile-menu-line"></span>
                 <span class="mobile-menu-line"></span>
@@ -41,10 +46,10 @@
             <div class="film-group">
                 <div class="trailer">
                     <img src="img/poster.png" alt="poster" class="trailer-poster">
-                    <button class="trailer-play">
+                    <a class="trailer-play fancybox-media" data-fancybox="gallery" href="https://www.youtube.com/watch?v=84a2VD68hJU">
                         <img src="img/play.svg" alt="Play" class="play-img">
                         <span class="play-text">Посмотреть трейлер</span>
-                    </button>
+                    </a>
                 </div>
                 <div class="film-info">
                     <h1 class="film-title">
@@ -188,5 +193,9 @@
             </div>
         </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
